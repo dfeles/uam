@@ -18,7 +18,7 @@ function setup() {
 
 function draw() {
   for(var i=0; i< 10000; i++) {
-    let pointillize = map(mouseX, 0, width, smallPoint, largePoint);
+    let pointillize = map(mouseX/2.0, 0, width, smallPoint, largePoint);
     let x = floor(random(img.width));
     let y = floor(random(img.height));
     let pix = img.get(x, y);
